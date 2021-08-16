@@ -1,28 +1,28 @@
 <?php
-$host = $_SERVER['HTTP_HOST'];
+//$host = $_SERVER['HTTP_HOST'];
 // HTTP
-define('HTTP_SERVER', 'https://'.$host.'/admin/');
-define('HTTP_CATALOG', 'https://'.$host.'/');
+define('HTTP_SERVER', 'https://kore-shop.ru/admin/');
+define('HTTP_CATALOG', 'https://kore-shop.ru/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://'.$host.'/admin/');
-define('HTTPS_CATALOG', 'https://'.$host.'/');
+define('HTTPS_SERVER', 'https://kore-shop.ru/admin/');
+define('HTTPS_CATALOG', 'https://kore-shop.ru/');
 
-$dir = dirname(dirname(__FILE__));
+//$dir = dirname(dirname(__FILE__));
 
 // DIR
-define('DIR_APPLICATION', $dir.'/admin/');
-define('DIR_SYSTEM', $dir.'/system/');
-define('DIR_LANGUAGE', $dir.'/admin/language/');
-define('DIR_TEMPLATE', $dir.'/admin/view/template/');
-define('DIR_CONFIG', $dir.'/system/config/');
-define('DIR_IMAGE', $dir.'/image/');
-define('DIR_CACHE', $dir.'/system/storage/cache/');
-define('DIR_DOWNLOAD', $dir.'/system/storage/download/');
-define('DIR_LOGS', $dir.'/system/storage/logs/');
-define('DIR_MODIFICATION', $dir.'/system/storage/modification/');
-define('DIR_UPLOAD', $dir.'/system/storage/upload/');
-define('DIR_CATALOG', $dir.'/catalog/');
+define('DIR_APPLICATION', 'C:/OpenServer/domains/kore-shop.ru/admin/');
+define('DIR_SYSTEM', 'C:/OpenServer/domains/kore-shop.ru/system/');
+define('DIR_LANGUAGE', 'C:/OpenServer/domains/kore-shop.ru/admin/language/');
+define('DIR_TEMPLATE', 'C:/OpenServer/domains/kore-shop.ru/admin/view/template/');
+define('DIR_CONFIG', 'C:/OpenServer/domains/kore-shop.ru/system/config/');
+define('DIR_IMAGE', 'C:/OpenServer/domains/kore-shop.ru/image/');
+define('DIR_CACHE', 'C:/OpenServer/domains/kore-shop.ru/system/storage/cache/');
+define('DIR_DOWNLOAD', 'C:/OpenServer/domains/kore-shop.ru/system/storage/download/');
+define('DIR_LOGS', 'C:/OpenServer/domains/kore-shop.ru/system/storage/logs/');
+define('DIR_MODIFICATION', 'C:/OpenServer/domains/kore-shop.ru/system/storage/modification/');
+define('DIR_UPLOAD', 'C:/OpenServer/domains/kore-shop.ru/system/storage/upload/');
+define('DIR_CATALOG', 'C:/OpenServer/domains/kore-shop.ru/catalog/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
