@@ -3853,7 +3853,7 @@ header {
 @media (max-width: 760px) {
     .thinkDo-subCat-list-view {
         text-align: left!important;
-        font-size: 15px;
+        font-size: 14px;
         padding: 10px 5px;
     }
     .category-list-text-only {
