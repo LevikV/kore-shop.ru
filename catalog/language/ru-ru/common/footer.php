@@ -12,6 +12,6 @@ $_['text_affiliate']    = 'Партнёры';
 $_['text_special']      = 'Товары со скидкой';
 $_['text_account']      = 'Личный кабинет';
 $_['text_order']        = 'История заказов';
-$_['text_wishlist']     = 'Мои закладки';
+$_['text_wishlist']     = 'Избранное';
 $_['text_newsletter']   = 'Рассылка новостей';
 $_['text_powered']      = 'Работает на <a target="_blank" href="http://myopencart.com/">ocStore</a><br /> %s &copy; %s';

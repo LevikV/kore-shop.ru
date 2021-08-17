@@ -131,7 +131,11 @@
 							     	}
 							     } ?>
 							     
-							     <!-- Search --><div class="search_form"><i class="fa fa-search"></i></div>
+							     <!-- Search -->
+                                <div class="search_form"><i class="fa fa-search"></i></div>
+                                <!-- ThinkDo Wishlist++ -->
+                                <a href="wishlist" class="wish-list-header"><i class="fa fa-heart"></i></a>
+                                <!-- ThinkDo Wishlist-- -->
 							     <a href="<?php echo $account; ?>" class="my-account"><i class="fa fa-user"></i></a>
 								<?php echo $cart; ?>
 							</div>
