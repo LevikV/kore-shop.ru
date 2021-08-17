@@ -3845,6 +3845,37 @@ header {
 /* @group 9. Main Content
 ------------------*/
 
+/*  ++ThinkDo ++ */
+/* Subcatgorys in Category*/
+.thinkDo-subCat-list-view {
+    font-size: 16px;
+}
+@media (max-width: 760px) {
+    .thinkDo-subCat-list-view {
+        text-align: left!important;
+        font-size: 15px;
+        padding: 10px 5px;
+    }
+    .category-list-text-only {
+        padding: 15px 0!important;
+    }
+    .thinkDo-subCat-row {
+        margin: 0!important;
+    }
+}
+
+
+
+
+/*  ++ThinkDo End-- */
+
+
+
+
+
+
+
+
 .main-fixed3 .main-content {
      margin-bottom: 60px;
 }

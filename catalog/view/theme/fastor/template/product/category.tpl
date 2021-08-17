@@ -23,7 +23,7 @@ include('catalog/view/theme/'.$config->get($config->get('config_theme') . '_dire
   <?php if ($categories && $theme_options->get('refine_search_style') != '2') { ?>
   <div class="refine_search_overflow text-center"><h2 class="refine_search">Выбирите подкатегорию</h2></div>
   <div class="category-list<?php if ($theme_options->get('refine_search_style') == '1') { echo ' category-list-text-only'; } ?>">
-  	<div class="row">
+  	<div class="row thinkDo-subCat-row">
   	  <?php 
   	  $class = 3; 
   	  $row = 4; 
@@ -51,7 +51,7 @@ include('catalog/view/theme/'.$config->get($config->get('config_theme') . '_dire
 	  	}
 	  	?>
 	  	<?php $r=$row_fluid-floor($row_fluid/$row)*$row; if($row_fluid>$row && $r == 1) { echo '</div><div class="row">'; } ?>
-	  	<div class="col-sm-<?php echo $class; ?> col-xs-6">
+	  	<div class="col-sm-<?php echo $class; ?> col-xs-6 thinkDo-subCat-list-view">
 	  		<?php if ($theme_options->get('refine_search_style') != '1') { ?>
 		  	<a href="<?php echo $category['href']; ?>"><img src="<?php echo $image; ?>" alt="<?php echo $category['name']; ?>" /></a>
 		  	<?php } ?>
@@ -60,7 +60,6 @@ include('catalog/view/theme/'.$config->get($config->get('config_theme') . '_dire
     background-color: #f9b1b5;
     border-radius: 15px;
     color: black;
-    font-size: 16px;
     font-weight: 400;
 "><?php echo $category['name']; ?></a>
 	  	</div>
