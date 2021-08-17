@@ -236,13 +236,20 @@ include('catalog/view/theme/'.$config->get($config->get('config_theme') . '_dire
 			        <?php } else { ?>
 			        <span class="price-new"><span itemprop="price" id="price-special"><?php echo $special; ?></span></span> <span class="price-old" id="price-old"><?php echo $price; ?></span>
 			        <?php } ?>
-			        <br />
+
 			        <?php if ($tax) { ?>
+                        <br />
 			        <span class="price-tax"><?php echo $text_tax; ?> <span id="price-tax"><?php echo $tax; ?></span></span><br />
 			        <?php } ?>
 			        <?php if ($points) { ?>
+                        <br />
 			        <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />
 			        <?php } ?>
+
+                      <a href="" class="wish-list-icon" onclick="wishlist.add('<?php echo $product_id; ?>');">
+                          <i class="fa fa-heart"></i>
+                      </a>
+
 			        <?php if ($discounts) { ?>
 			        <br />
 			        <div class="discount">
@@ -476,7 +483,7 @@ return false;
 </script>
      			          <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
      			          <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" rel="<?php echo $product_id; ?>" data-loading-text="<?php echo $text_loading; ?>" class="button" />
-     			          <a class="btn btn-primary btn-lg btn-block" data-pdqo-item="<?php echo $product_id; ?>" onclick="pdqoObject(this);" />Быстрый заказ</a>
+                          <a class="btn btn-primary btn-lg btn-block" data-pdqo-item="<?php echo $product_id; ?>" onclick="pdqoObject(this);" />Быстрый заказ</a>
 
      			          <?php 
      			          $product_question = $modules_old_opencart->getModules('product_question');
@@ -488,9 +495,7 @@ return false;
 			          <?php } ?>
 			        </div>
 			        
-			        <div class="links clearfix">
-			        	<a onclick="wishlist.add('<?php echo $product_id; ?>');"><?php if($theme_options->get( 'add_to_wishlist_text', $config->get( 'config_language_id' ) ) != '') { echo $theme_options->get( 'add_to_wishlist_text', $config->get( 'config_language_id' ) ); } else { echo 'Add to wishlist'; } ?></a>
-					</div>
+
 			         
 			        <?php if ($minimum > 1) { ?>
 			        <div class="minimum"><?php echo $text_minimum; ?></div>
@@ -546,7 +551,9 @@ return false;
 	  	'content' => 'description',
 	  	'sort' => 1
 	  );
-	  
+
+	  /* ThinkDo Hide attributes++ */
+	  /*
 	  if ($attribute_groups) { 
 		  $tabs[] = array(
 		  	'heading' => $tab_attribute,
@@ -554,7 +561,8 @@ return false;
 		  	'sort' => 3
 		  );
 	  }
-	  
+	  */
+      /* ThinkDo Hideattributes End-- */
 	  if ($review_status) { 
 	  	  $tabs[] = array(
 	  	  	'heading' => $tab_review,
@@ -593,7 +601,7 @@ return false;
   		if($tab['content'] == 'description') { $id = 'tab-description'; }
   		if($tab['content'] == 'attribute') { $id = 'tab-attribute'; }
   		if($tab['content'] == 'review') { $id = 'tab-review'; }
-  		echo '<a href="#'.$id.'">'.$tab['heading'].'</a>';
+        echo '<a href="#'.$id.'">'.$tab['heading'].'</a>';
   	} ?>
   </div>
   <?php $i = 0; foreach($tabs as $tab) { $i++;
@@ -603,27 +611,31 @@ return false;
   	}
   } ?>
   <div id="tab-description" class="tab-content" itemprop="description"><?php echo $description; ?></div>
-  <?php if ($attribute_groups) { ?>
-  <div id="tab-attribute" class="tab-content">
-    <table class="attribute" cellspacing="0">
-      <?php foreach ($attribute_groups as $attribute_group) { ?>
-      <thead>
-        <tr>
-          <td colspan="2"><?php echo $attribute_group['name']; ?></td>
-        </tr>
-      </thead>
-      <tbody>
-        <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-        <tr>
-          <td><?php echo $attribute['name']; ?></td>
-          <td><?php echo $attribute['text']; ?></td>
-        </tr>
-        <?php } ?>
-      </tbody>
-      <?php } ?>
-    </table>
-  </div>
-  <?php } ?>
+
+<!-- ThinkDo Hide attribute Start++
+    <?php if ($attribute_groups) { ?>
+        <div id="tab-attribute" class="tab-content">
+            <table class="attribute" cellspacing="0">
+                <?php foreach ($attribute_groups as $attribute_group) { ?>
+                    <thead>
+                    <tr>
+                        <td colspan="2"><?php echo $attribute_group['name']; ?></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+                        <tr>
+                            <td><?php echo $attribute['name']; ?></td>
+                            <td><?php echo $attribute['text']; ?></td>
+                        </tr>
+                    <?php } ?>
+                    </tbody>
+                <?php } ?>
+            </table>
+        </div>
+    <?php } ?>
+ThinkDo Hide attribute End-- -->
+
   <?php if ($review_status) { ?>
   <div id="tab-review" class="tab-content">
 	<form class="form-horizontal" id="form-review">
