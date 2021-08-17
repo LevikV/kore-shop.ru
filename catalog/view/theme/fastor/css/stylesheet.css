@@ -1564,7 +1564,7 @@ header {
 
 	#top #cart_block {
 		padding: 0px;
-		margin: 24px 0px 0px 32px;
+		margin: 24px 0px 0px 8px;
 		display: inline-block;
 		vertical-align: top;
 	}
@@ -1681,7 +1681,7 @@ header {
 		          border-radius: 100px;
 		          -webkit-border-radius: 100px;
 		          -moz-border-radius: 100px;
-		          margin-left: -17px;
+		          margin-left: -8px;
 		          margin-top: 11px;
 		          font-style: normal;
 		          transition: all 0.2s ease-in;
@@ -2257,7 +2257,7 @@ header {
           width: auto;
           float: none;
           vertical-align: top;
-          min-width: 330px;
+          min-width: 368px;
      }
 
           .megamenu-type-8 .header-type-3 #header-right {
@@ -2267,6 +2267,33 @@ header {
 
           .body-full-width .header-type-3 #header-right {
           }
+
+          /*  ++ThinkDo Wishlist++ */
+          .header-type-3 #top .wish-list-header {
+              display: inline-block;
+              vertical-align: top;
+              width: 45px;
+              height: 45px;
+              background: #fff;
+              border: 1px solid #cccccc;
+              border-radius: 100px;
+              -webkit-border-radius: 100px;
+              -moz-border-radius: 100px;
+              text-align: center;
+              font-size: 17px;
+              transition: all 0.2s ease-in;
+              -moz-transition: all 0.2s ease-in;
+              -webkit-transition: all 0.2s ease-in;
+              padding: 9px 0px 0px 0px;
+              margin: 24px 3px 0px 0px;
+              font-family: 'Montserrat', sans-serif;
+          }
+          .header-type-3 #top .wish-list-header:hover {
+              color: #ffffff;
+              background: #f9b1b5;
+          }
+          /*  ++ThinkDo Wishlist End-- */
+
 
           .header-type-3 #top .search_form {
                display: inline-block;
@@ -2284,7 +2311,7 @@ header {
                -moz-transition: all 0.2s ease-in;
                -webkit-transition: all 0.2s ease-in;
                padding: 9px 1px 0px 0px;
-               margin: 24px 15px 0px 0px !important;
+               margin: 24px 4px 0px 0px !important;
                cursor: pointer;
                font-family: 'Montserrat', sans-serif;
           }
