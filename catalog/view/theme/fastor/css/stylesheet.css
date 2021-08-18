@@ -3846,9 +3846,12 @@ header {
 ------------------*/
 
 /*  ++ThinkDo ++ */
-/* Subcatgorys in Category*/
+/* Subcatgoriess in Category*/
 .thinkDo-subCat-list-view {
     font-size: 16px;
+}
+.category-list-text-only {
+    background: #ffffff!important;
 }
 @media (max-width: 760px) {
     .thinkDo-subCat-list-view {
