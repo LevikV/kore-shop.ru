@@ -4880,6 +4880,8 @@ header {
 	          .carousel .carousel-inner .product-grid > .row:last-child {
 	               overflow: visible;
 	          }
+/*  ++ ThinkDo Product thumb hide vertical line in grid in Category Start ++ */
+/*
 
 	          .product-grid > .row:before {
 	               content: '';
@@ -4906,6 +4908,8 @@ header {
 	               .product-grid > .row:first-child:before {
 	                    display: none;
 	               }
+ */
+/*  -- ThinkDo Product thumb hide horizontal line in grid in Category End -- */
 
 	     .box-product .carousel {
 	          overflow: hidden;
@@ -4984,6 +4988,8 @@ header {
 		               .border-width-1 .standard-body .full-width .col-md-12 .col-md-12.center-column .product-grid > .row:first-child:before {
 		                    display: none;
 		               }
+/*  ++ ThinkDo Product thumb hide horizontal line in grid in Category Start ++ */
+/*
 
 		     .center-column .product-grid:after {
 		          left: 0;
@@ -4994,6 +5000,8 @@ header {
 		          position: absolute;
 		          content: '';
 		     }
+ */
+/*  -- ThinkDo Product thumb hide horizontal line in grid in Category End -- */
 
 		          .box-type-4.no-box-type-7 .center-column .product-grid:after {
 		               left: 0 !important;
@@ -5031,6 +5039,11 @@ header {
 			padding: 30px 10px 10px 10px;
 			text-align: center;
 			position: relative;
+            /*  ++ThinkDo Product thumb box shadow Start++ */
+            box-shadow: 0 0 15px rgb(0 15 30 / 8%);
+            margin: 10px 0;
+            border-radius: 8px;
+            /*  ++ThinkDo Product thumb box shadow End-- */
 		}
 
 		     .product-grid-type-8 .product-grid .product {
@@ -5076,7 +5089,8 @@ header {
 		          }
 
 
-
+/*  ++ ThinkDo Product thumb hide vertical line in grid in Category Start ++ */
+   /*
                .product-grid .product:before {
                     content: '';
                     position: absolute;
@@ -5092,6 +5106,8 @@ header {
                     -moz-transition: border-color 0.2s ease-in;
                }
 
+    */
+/*  -- ThinkDo Product thumb hide vertical line in grid in Category End -- */
                     .product-grid-type-2 .product-grid .product:before,
                     .product-grid-type-2 .product-grid .product:after {
                          background: none !important;
