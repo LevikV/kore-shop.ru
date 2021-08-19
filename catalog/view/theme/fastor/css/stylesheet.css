@@ -7148,7 +7148,8 @@ header {
 			}
 
 			     .product-info .description {
-			          padding-top: 0px;
+                     padding: 0;
+                     background: #ffffff;
 			          font-weight: 600;
 			          line-height: 23px;
 			     }
@@ -7492,6 +7493,7 @@ header {
 
 					.product-info .cart .add-to-cart #button-cart {
 					     font-size: 12px !important;
+                        padding: 0 58px;
 					}
 
 				/* Product info -> Add to compare, wishlist */

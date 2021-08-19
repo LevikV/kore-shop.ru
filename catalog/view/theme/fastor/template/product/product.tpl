@@ -214,17 +214,20 @@ include('catalog/view/theme/'.$config->get($config->get('config_theme') . '_dire
 			      </div>
 			      <?php } ?>
 			      
-			      <div class="description" style="
-    display: none;
-">
-			        <?php if ($manufacturer) { ?>
-			        <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
-			        <?php } ?>
-			        <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
-			        <?php if ($reward) { ?>
-			        <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
-			        <?php } ?>
-			        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?></div>
+			      <div class="description">
+                      <!--
+                      <?php if ($manufacturer) { ?>
+                          <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
+                      <?php } ?>
+                      <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
+                      <?php if ($reward) { ?>
+                          <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
+                      <?php } ?>
+                      -->
+                      <span><?php echo $text_stock; ?></span> <?php echo $stock; ?>
+
+                  </div>
+
 			      <?php if ($price) { ?>
 			      <div class="price">
 			        <?php if($theme_options->get( 'display_specials_countdown' ) == '1' && $special) { $countdown = rand(0, 5000)*rand(0, 5000); 
