@@ -67,11 +67,7 @@ $modules_old_opencart = new Modules($registry); ?>
      					</div>
 					<?php } else { ?>
 					     <h1>
-					        ThinkDO
 					        <?php if ($manufacturer) { ?>
-					            <span>
-					                <?php echo $text_manufacturer; ?>
-					            </span>
 					            <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a>
 					        <?php } ?>
 					     </h1>
