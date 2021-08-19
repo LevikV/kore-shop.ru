@@ -3832,7 +3832,7 @@ header {
 			}
 
 				.breadcrumb .container ul li:before {
-					content: "›";
+					content: "<";
 					padding-right: 4px;
 				}
 
@@ -3846,6 +3846,7 @@ header {
 ------------------*/
 
 /*  ++ThinkDo ++ */
+
 /* Subcatgoriess in Category*/
 .thinkDo-subCat-list-view {
     font-size: 16px;
@@ -3871,6 +3872,22 @@ header {
 .product-center .thinkDO-title-product {
     font-weight: 500;
     font-size: 28px;
+}
+/**/
+.thinkDO-product-thumb-stock {
+    font-weight: 600;
+}
+
+/**/
+@media (max-width: 470px) {
+
+    .filter-product .filter-tabs ul > li {
+        display: block!important;
+    }
+
+    .product-grid .product {
+        min-height: 510px;
+    }
 }
 
 
@@ -5420,6 +5437,7 @@ header {
 
 			.product-grid .product .name {
 				padding-top: 10px;
+                min-height: 185px;
 			}
 
 			     .product-grid-type-4 .product-grid .product .name {

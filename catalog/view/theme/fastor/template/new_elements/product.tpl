@@ -67,7 +67,13 @@ $config = $registry->get('config');
 		<div class="brand"><?php echo $product_detail['manufacturer']; ?></div>
 		<?php } ?>
 
-        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?>
+        <!-- ++ThinkDo Code Start++ -->
+
+        <div class="thinkDO-product-thumb-stock">
+            <?php echo $product['stock_status']; ?>
+        </div>
+
+        <!-- --ThinkDo Code End-- -->
 
 		<?php if($product['price']) { ?>
 		<div class="price">
