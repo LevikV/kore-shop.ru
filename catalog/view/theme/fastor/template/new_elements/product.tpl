@@ -66,7 +66,9 @@ $config = $registry->get('config');
 		<?php $product_detail = $theme_options->getDataProduct( $product['product_id'] ); ?>
 		<div class="brand"><?php echo $product_detail['manufacturer']; ?></div>
 		<?php } ?>
-		
+
+        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?>
+
 		<?php if($product['price']) { ?>
 		<div class="price">
 			<?php if (!$product['special']) { ?>
