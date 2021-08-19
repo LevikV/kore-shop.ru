@@ -169,7 +169,7 @@
 			<div class="background">
 				<div class="shadow"></div>
 				<div class="pattern">
-				     <div class="top-bar">
+				     <div class="top-bar hidden-xs">
 				          <div class="container">
 						       <div class="hidden-xs">
 				               <div class="hedertest">
@@ -240,10 +240,10 @@
                                         				<div class="megaMenuToggle">
                                         					<div class="megamenuToogle-wrapper">
                                         						<div class="megamenuToogle-pattern">
-                                        							<div class="container">
-                                        								<div><span></span><span></span><span></span></div>
-                                        								Navigation
-                                        							</div>
+                                                                    <div class="container">
+                                                                        <div><span></span><span></span><span></span></div>
+                                                                        Navigation
+                                                                    </div>
                                         						</div>
                                         					</div>
                                         				</div>
