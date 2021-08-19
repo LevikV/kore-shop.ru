@@ -634,7 +634,7 @@ return false;
             </table>
         </div>
     <?php } ?>
-ThinkDo Hide attribute End-- -->
+ThinkDo Hide attribute End--- -->
 
   <?php if ($review_status) { ?>
   <div id="tab-review" class="tab-content">
