@@ -66,10 +66,14 @@ $modules_old_opencart = new Modules($registry); ?>
      					     </div>
      					</div>
 					<?php } else { ?>
-					     <h1 id="title-page"><?php echo $heading_title; ?>
-					     	<?php if(isset($weight)) { if ($weight) { ?>
-					     	&nbsp;(<?php echo $weight; ?>)
-					     	<?php } } ?>
+					     <h1>
+					        ThinkDO
+					        <?php if ($manufacturer) { ?>
+					            <span>
+					                <?php echo $text_manufacturer; ?>
+					            </span>
+					            <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a>
+					        <?php } ?>
 					     </h1>
 					     
 					     <ul>

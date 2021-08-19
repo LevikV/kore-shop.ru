@@ -180,7 +180,18 @@ include('catalog/view/theme/'.$config->get($config->get('config_theme') . '_dire
 			      		echo $module;
 			      	}
 			      } ?>
-			      
+
+                     <!-- ThinkDo Title Start++ -->
+
+                     <h1 class="thinkDO-title-product">
+                         <?php echo $heading_title; ?>
+                         <?php if(isset($weight)) { if ($weight) { ?>
+                             &nbsp;(<?php echo $weight; ?>)
+                         <?php } } ?>
+                     </h1>
+
+                     <!-- ThinkDo Title End-- -->
+
 			      <?php if ($review_status) { ?>
 			      <div class="review">
 			      	<?php if($rating > 0) { ?>
