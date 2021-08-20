@@ -1569,6 +1569,13 @@ header {
 		vertical-align: top;
 	}
 
+    @media (max-width: 767px) {
+        #top #cart_block {
+            margin: 0 5px 0 10px;
+            width: 160px;
+        }
+    }
+
 	     .cart-block-type-4 #top #cart_block {
 	          margin-left: 28px;
 	     }
@@ -2272,7 +2279,7 @@ header {
           .wish-list-icon {
               display: inline-block;
               vertical-align: top;
-              width: 45px;
+              width: 45px!important;
               height: 45px;
               background: #fff;
               border: 1px solid #cccccc;
@@ -2298,6 +2305,28 @@ header {
           .product-info .wish-list-icon {
               float: right;
           }
+          /**/
+          .wish-list-icon-block,
+          .account-icon-block {
+              width: auto!important;
+              margin: 0 5px!important;
+              float: left;
+          }
+          @media (max-width: 767px) {
+              .header-type-3 #top .wish-list-icon {
+                  margin: 0px 5px;
+              }
+              #top .my-account {
+                  margin: 0px 5px;
+              }
+          }
+
+         .thinkDo-mobile-menu-icon-block {
+             position: absolute;
+             left: 40px;
+             top: 5px;
+             z-index: 999;
+         }
           /*  ++ThinkDo Wishlist End-- */
 
 
@@ -3896,6 +3925,9 @@ header {
     }
     .thinkDo-price-block_price-new {
         white-space: nowrap;
+    }
+    .box-with-categories .box-heading {
+        margin-top: 10px!important;
     }
 }
 

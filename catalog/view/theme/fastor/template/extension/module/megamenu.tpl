@@ -24,12 +24,20 @@ $id = rand(0, 5000)*rand(5000, 50000); ?>
 					<!--
                     <?php echo $navigation_text; ?>
                     -->
-                    <?php echo $cart; ?>
-                    <a href="wishlist" class="wish-list-icon"><i class="fa fa-heart"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
+        <div class="thinkDo-mobile-menu-icon-block">
+            <div class="wish-list-icon-block">
+                <a href="wishlist" class="wish-list-icon"><i class="fa fa-heart"></i></a>
+            </div>
+            <div class="account-icon-block">
+                <a href="/my-account/" class="my-account"><i class="fa fa-user"></i></a>
+            </div>
+            <?php echo $cart; ?>
+        </div>
+
 	<?php } ?>
 	<div class="megamenu-wrapper">
 		<div class="megamenu-pattern">

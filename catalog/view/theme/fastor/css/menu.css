@@ -2305,7 +2305,7 @@
 				}
 			
 				.megamenuToogle-wrapper .container > div {
-					float: right;
+					float: left;
 					width: 15px;
 					margin: 4px 0px 0px 0px;
 				}
