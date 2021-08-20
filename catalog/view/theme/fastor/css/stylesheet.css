@@ -2319,6 +2319,13 @@ header {
               #top .my-account {
                   margin: 0px 5px;
               }
+              .wish-list-icon,
+              #top .my-account {
+                  width: 30px!important;
+                  height: 30px;
+                  font-size: 14px;
+                  padding: 4px 0 0 0;
+              }
           }
 
          .thinkDo-mobile-menu-icon-block {
@@ -3928,6 +3935,12 @@ header {
     }
     .box-with-categories .box-heading {
         margin-top: 10px!important;
+    }
+}
+/**/
+@media (min-width: 768px) {
+    .header-type-3 #header-right {
+        display: table-cell!important;
     }
 }
 
