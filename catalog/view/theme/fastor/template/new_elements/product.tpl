@@ -76,11 +76,11 @@ $config = $registry->get('config');
         <!-- --ThinkDo Code End-- -->
 
 		<?php if($product['price']) { ?>
-		<div class="price">
+		<div class="price thinkDo-price-block">
 			<?php if (!$product['special']) { ?>
 			<?php echo $product['price']; ?>
 			<?php } else { ?>
-			<span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
+			<span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new thinkDo-price-block_price-new"><?php echo $product['special']; ?></span>
 			<?php } ?>
 		</div>
 		<?php } ?>

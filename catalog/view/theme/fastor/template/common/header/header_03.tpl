@@ -306,7 +306,7 @@
 							</div>
 						
 							<!-- Header Right -->
-							<div class="col-sm-4" id="header-right">
+							<div class="hidden-xs visible-sm-inline-block col-sm-4" id="header-right">
 							     <?php 
 							     $top_block = $modules_old_opencart->getModules('top_block');
 							     if( count($top_block) ) { 

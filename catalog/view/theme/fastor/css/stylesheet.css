@@ -3889,6 +3889,17 @@ header {
         min-height: 510px;
     }
 }
+/*Price in product thumb*/
+@media (max-width: 767px) {
+    .thinkDo-price-block {
+        min-height: 56px;
+    }
+    .thinkDo-price-block_price-new {
+        white-space: nowrap;
+    }
+}
+
+
 
 
 /*  ++ThinkDo End-- */

@@ -7,7 +7,11 @@ Website: http://artursulkowski.pl
 
 class ControllerExtensionModuleMegamenu extends Controller {
 	public function index($setting) {
-		
+		/* ++TnikDo Code++ */
+
+        $data['cart'] = $this->load->controller('common/cart');
+
+
 		// Ładowanie modelu MegaMenu
 		$this->load->model('menu/megamenu');
 		

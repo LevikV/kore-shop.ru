@@ -21,7 +21,10 @@ $id = rand(0, 5000)*rand(5000, 50000); ?>
 			<div class="megamenuToogle-pattern">
 				<div class="container">
 					<div><span></span><span></span><span></span></div>
-					<?php echo $navigation_text; ?>
+					<!--
+                    <?php echo $navigation_text; ?>
+                    -->
+                    <?php echo $cart; ?>
                     <a href="wishlist" class="wish-list-icon"><i class="fa fa-heart"></i></a>
 				</div>
 			</div>
