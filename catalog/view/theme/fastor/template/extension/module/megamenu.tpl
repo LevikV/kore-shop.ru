@@ -22,6 +22,7 @@ $id = rand(0, 5000)*rand(5000, 50000); ?>
 				<div class="container">
 					<div><span></span><span></span><span></span></div>
 					<?php echo $navigation_text; ?>
+                    <a href="wishlist" class="wish-list-icon"><i class="fa fa-heart"></i></a>
 				</div>
 			</div>
 		</div>
