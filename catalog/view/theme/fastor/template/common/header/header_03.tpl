@@ -194,7 +194,7 @@
 				     </div>
 				     
 					<div class="container">
-						<div class="row">		
+						<div class="row thinkDo-mobile-menu-row">
 						     <?php if ($logo) { 
 						     $nthumb = str_replace(' ', "%20", ($logo));
 						     $nthumb = str_replace(HTTP_SERVER, "", $nthumb);
@@ -202,9 +202,18 @@
 						     <!-- Header Left -->
 						     <div class="col-sm-4" id="header-left">
 						          <!-- Logo -->
-						          <div class="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" style="max-width: 150px;"/></a></div>
-			                      <div class="hidden-sm hidden-md hidden-lg hidden-xl" style="margin-top: 10px;">			     
-							   <a href="tel:+79164521224"><span><i class="fa fa-phone " aria-hidden="true" style="margin-right: 5px;color: #f9b1b5;"></i>+7 (916) 452-12-24</span></a>
+						          <div class="logo">
+                                      <a href="<?php echo $home; ?>">
+                                          <img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" style="max-width: 150px;"/>
+                                      </a>
+                                  </div>
+			                      <div class="hidden-xs hidden-sm hidden-md hidden-lg hidden-xl" style="margin-top: 10px;">
+                                      <a href="tel:+79164521224">
+                                          <span>
+                                              <i class="fa fa-phone " aria-hidden="true" style="margin-right: 5px;color: #f9b1b5;"></i>
+                                              +7 (916) 452-12-24
+                                          </span>
+                                      </a>
                                   </div>	 
 							 </div>
 						     <?php } ?>

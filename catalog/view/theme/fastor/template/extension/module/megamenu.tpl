@@ -29,6 +29,11 @@ $id = rand(0, 5000)*rand(5000, 50000); ?>
 		</div>
 	</div>
         <div class="visible-xs-block hidden-sm hidden-md hidden-lg thinkDo-mobile-menu-icon-block">
+
+            <div class="search_form">
+                <i class="fa fa-search"></i>
+            </div>
+
             <div class="wish-list-icon-block">
                 <a href="wishlist" class="wish-list-icon"><i class="fa fa-heart"></i></a>
             </div>

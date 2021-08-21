@@ -1153,7 +1153,7 @@
 	/* @group Top */
 
 	.responsive #top .pattern > .container {
-	     padding-top: 10px;
+	     padding-top: 0;
 	     padding-bottom: 30px;
 	}
 
@@ -1212,8 +1212,18 @@
 
      	.responsive #top .logo {
      		text-align: center;
-     		padding: 35px 0px 5px 0px;
+     		padding: 0;
+			position: absolute;
+			z-index: 999;
+			top: 5px;
+			right: 9px;
      	}
+	.responsive #top .logo > a > img {
+		width: 80px;
+		height: 35px;
+		border-bottom-left-radius: 8px;
+		border-top-left-radius: 8px;
+	}
 
      	/* @end */
 

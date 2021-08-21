@@ -1571,8 +1571,8 @@ header {
 
     @media (max-width: 767px) {
         #top #cart_block {
-            margin: 0 5px 0 10px;
-            width: 160px;
+            margin: 0 5px 0 12px!important;
+            width: 33px;
         }
     }
 
@@ -2309,29 +2309,48 @@ header {
           .wish-list-icon-block,
           .account-icon-block {
               width: auto!important;
-              margin: 0 5px!important;
+              margin: 0!important;
               float: left;
           }
           @media (max-width: 767px) {
               .header-type-3 #top .wish-list-icon {
                   margin: 0px 5px;
               }
-              #top .my-account {
-                  margin: 0px 5px;
+              #top .my-account,
+              .header-type-3 #top .search_form {
+                  margin: 0px 5px!important;
               }
               .wish-list-icon,
+              #top #cart_block .cart-heading .cart-icon,
+              .header-type-3 #top .search_form,
               #top .my-account {
                   width: 30px!important;
-                  height: 30px;
-                  font-size: 14px;
-                  padding: 4px 0 0 0;
+                  height: 30px!important;
+                  font-size: 14px!important;
+                  padding: 4px 0 0 0!important;
+              }
+              #top #cart_block .cart-heading .cart-count {
+                  width: 20px;
+                  height: 20px;
+                  font-size: 9px;
+                  padding: 2px 0px 0px 0px;
+                  margin-left: -12px;
+              }
+              #top #cart_block .cart-heading p {
+                  display: none;
+              }
+              #top #cart_block .cart-heading p span {
+                  font-size: 14px!important;
+              }
+              #top #cart_block .cart-heading p:after {
+                  margin: 4px 0px 0px 2px;
               }
           }
 
          .thinkDo-mobile-menu-icon-block {
              position: absolute;
-             left: 40px;
-             top: 5px;
+             left: 50px;
+             top: 7px;
              z-index: 999;
          }
           /*  ++ThinkDo Wishlist End-- */
@@ -2340,8 +2359,8 @@ header {
           .header-type-3 #top .search_form {
                display: inline-block;
                vertical-align: top;
-               width: 45px !important;
-               height: 45px !important;
+               width: 45px;
+               height: 45px;
                background: #fff;
                border: 1px solid #cccccc;
                border-radius: 100px;
@@ -2353,7 +2372,7 @@ header {
                -moz-transition: all 0.2s ease-in;
                -webkit-transition: all 0.2s ease-in;
                padding: 9px 1px 0px 0px;
-               margin: 24px 4px 0px 0px !important;
+               margin: 24px 4px 0px 0px;
                cursor: pointer;
                font-family: 'Montserrat', sans-serif;
           }
@@ -3943,7 +3962,21 @@ header {
         display: table-cell!important;
     }
 }
-
+/**/
+@media (max-width: 767px) {
+    .thinkDo-mobile-menu-row {
+        margin: 0 -30px!important;
+    }
+    .header-type-3 #header-center {
+        padding-top: 0!important;
+    }
+    .breadcrumb-style-1 .breadcrumb .container > div{
+        padding-top: 15px!important;
+    }
+    .breadcrumb-style-1 .breadcrumb .container ul {
+        margin-bottom: 15px!important;
+    }
+}
 
 
 

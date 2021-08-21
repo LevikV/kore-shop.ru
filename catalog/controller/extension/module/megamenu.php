@@ -11,6 +11,7 @@ class ControllerExtensionModuleMegamenu extends Controller {
 
         $data['cart'] = $this->load->controller('common/cart');
 
+        /* --TnikDo Code-- */
 
 		// Ładowanie modelu MegaMenu
 		$this->load->model('menu/megamenu');
