@@ -260,7 +260,7 @@ include('catalog/view/theme/'.$config->get($config->get('config_theme') . '_dire
 			        <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />
 			        <?php } ?>
 
-                      <a href="" class="wish-list-icon" onclick="wishlist.add('<?php echo $product_id; ?>');">
+                      <a class="wish-list-icon" onclick="wishlist.add('<?php echo $product_id; ?>');">
                           <i class="fa fa-heart"></i>
                       </a>
 

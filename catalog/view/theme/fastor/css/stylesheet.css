@@ -2298,6 +2298,7 @@ header {
           .wish-list-icon:hover {
               color: #ffffff;
               background: #f9b1b5;
+              cursor: pointer;
           }
           .header-type-3 #top .wish-list-icon {
               margin: 24px 3px 0px 0px;
