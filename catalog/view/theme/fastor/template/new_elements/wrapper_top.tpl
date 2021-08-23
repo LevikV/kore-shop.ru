@@ -69,6 +69,9 @@ $modules_old_opencart = new Modules($registry); ?>
 					     <h1>
 					        <?php if ($manufacturer) { ?>
 					            <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a>
+					        <?php } else { ?>
+					            <?php echo $heading_title; ?>
+
 					        <?php } ?>
 					     </h1>
 					     

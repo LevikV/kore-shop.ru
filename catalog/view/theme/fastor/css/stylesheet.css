@@ -3890,6 +3890,7 @@ header {
 				.breadcrumb .container ul li:before {
 					content: "<";
 					padding-right: 4px;
+                    color: #ffffff;
 				}
 
 					.breadcrumb .container ul li:first-child:before {
@@ -3942,7 +3943,7 @@ header {
     }
 
     .product-grid .product {
-        min-height: 510px;
+        min-height: 420px;
     }
 }
 /*Price in product thumb*/
@@ -3976,6 +3977,10 @@ header {
     }
     .breadcrumb-style-1 .breadcrumb .container ul {
         margin-bottom: 15px!important;
+    }
+    .product-grid .product .name {
+        font-size: 12px;
+        min-height: 125px!important;
     }
 }
 /**/
