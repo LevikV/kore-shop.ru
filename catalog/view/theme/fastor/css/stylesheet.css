@@ -3978,6 +3978,31 @@ header {
         margin-bottom: 15px!important;
     }
 }
+/**/
+.thinkdo-mainmenu-bands {
+    list-style: none;
+    margin: -14px 0px -15px 0px;
+    padding: 0px;
+    position: relative;
+}
+.thinkdo-mainmenu-bands>li {
+    position: relative;
+    margin: 0px -5px;
+    padding: 10px 0 8px 0;
+}
+.thinkdo-mainmenu-bands>li:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -25px;
+    width: 400px;
+    height: 1px;
+    background-color: #eeeeee;
+}
+.thinkdo-mainmenu-bands>li:last-child:after {
+    display: none;
+}
+
 
 
 
